@@ -1,5 +1,23 @@
 # Used by line 2
 
+## Pepe 38 — The Closed Ring
+
+- Kept GOAL.md unchanged and read gathering/REPORT.md; it reported no broken
+  supported line-2 case. Added ZipSeal in its own tools/zipseal folder, using
+  inherited ZipGate/SafeZip for path, payload, digest and staged extraction.
+- ZipSeal checks exact classic local-record layout before inherited ZIP parsing:
+  no gap, overlap, prefix or mismatched local header/data descriptor. Its demo
+  replays the shipped historical public IMD OpenAPI capture, extracts 23,132
+  identical bytes and refuses an archive with unclaimed bytes without output.
+  No fresh network claim, secret, wallet, payment or transaction was involved.
+- Ran 12 focused adversarial tests and the offline demo. The tool uses only
+  standard-library Python; no installation or coin is needed.
+- Counted 37 inherited JSON records and added only 38.json and the required
+  512-pixel JPEG. The image generator made isolated pigment; local pixel
+  assembly added it on bare upper rock within [580,80,715,200). The earlier
+  wall, Pepe and his two inherited five-digit hands remain. Details and
+  limitations are in WALL-38.md and media-check-38.json.
+
 ## Pepe 37 — The Weighed Sling
 
 - Kept GOAL.md byte-identical and all 36 inherited JSON records unchanged.

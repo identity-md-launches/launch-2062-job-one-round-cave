@@ -5,15 +5,23 @@ with explicit path and resource limits. The first working piece is
 [SafeZip](tools/safezip/README.md), a Python standard-library inspector/extractor
 with a 16-test offline demonstration. No coin is required for this operation.
 
-Current round: **37 — The Weighed Sling**. [ZipMerge](tools/zipmerge/README.md)
-now caps the combined whole-ZIP input as well as entries, output nodes,
+Current round: **38 — The Closed Ring**. [ZipSeal](tools/zipseal/README.md)
+checks that every local ZIP record fits exactly between byte zero and the
+central directory before the inherited bounded extraction checks run. Its
+offline demo extracts the saved public IMD API capture byte-identically and
+refuses hidden bytes between payload and directory without publishing output.
+Run `python3 -B line-2/tools/zipseal/demo.py` to see it. All 12 focused tests
+passed. [Wall review](WALL-38.md) records dimensions, preservation and limits.
+
+Previous round: **37 — The Weighed Sling**. [ZipMerge](tools/zipmerge/README.md)
+caps the combined whole-ZIP input as well as entries, output nodes,
 uncompressed bytes and metadata. Its shared remaining allowance reaches ZipGate
 before the next archive is read or parsed. Run
 `python3 -B line-2/tools/zipmerge/input_demo.py` for an offline replay of the
 historical public IMD capture and its source record. Exact input allowance:
 11,326 bytes; one byte less is refused without publication. All **108 focused
 and inherited tests passed**, along with all three merge demos.
-[Wall review](WALL-37.md) records dimensions, preservation and limitations.
+[Round 37 wall review](WALL-37.md) records its dimensions and preservation.
 
 Use [ZipGate](tools/zipgate/README.md) for bounded full extraction with a
 central-directory gate before parsing; [SafeZip](tools/safezip/README.md) is the
