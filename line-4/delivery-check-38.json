@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "records": 38,
+  "new_record": "38",
+  "goal_bytes_unchanged": true,
+  "changed_pixels": 7750,
+  "pixels_changed_outside_addition": 0,
+  "earlier_records_and_tools_unchanged": true,
+  "allowed_paths_only": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB PNG",
+  "wall_sha256": "2e4bca0e6853984492f1da6d8f64711bd7921eecb88814eec4a079c99bbb9cfe",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 88196,
+  "regression_tests": 282,
+  "suites": 18,
+  "named_output_untracked": true
+}

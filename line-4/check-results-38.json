@@ -1,0 +1,250 @@
+{
+  "suites": [
+    {
+      "tool": "apidelta",
+      "exit": 0,
+      "tests": 44,
+      "stdout": "",
+      "stderr": "............................................\n----------------------------------------------------------------------\nRan 44 tests in 0.671s\n\nOK\n"
+    },
+    {
+      "tool": "authcheck",
+      "exit": 0,
+      "tests": 13,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 18.959s\n\nOK\n"
+    },
+    {
+      "tool": "boundcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.538s\n\nOK\n"
+    },
+    {
+      "tool": "constcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.441s\n\nOK\n"
+    },
+    {
+      "tool": "dependcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 2.403s\n\nOK\n"
+    },
+    {
+      "tool": "dispatchcheck",
+      "exit": 0,
+      "tests": 19,
+      "stdout": "",
+      "stderr": "...................\n----------------------------------------------------------------------\nRan 19 tests in 0.264s\n\nOK\n"
+    },
+    {
+      "tool": "fallbackheaders",
+      "exit": 0,
+      "tests": 9,
+      "stdout": "",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.038s\n\nOK\n"
+    },
+    {
+      "tool": "headercheck",
+      "exit": 0,
+      "tests": 15,
+      "stdout": "",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.061s\n\nOK\n"
+    },
+    {
+      "tool": "idcheck",
+      "exit": 0,
+      "tests": 13,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.616s\n\nOK\n"
+    },
+    {
+      "tool": "keycheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.901s\n\nOK\n"
+    },
+    {
+      "tool": "mapcheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.388s\n\nOK\n"
+    },
+    {
+      "tool": "multiplecheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 2.620s\n\nOK\n"
+    },
+    {
+      "tool": "oauthcheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.599s\n\nOK\n"
+    },
+    {
+      "tool": "paramcheck",
+      "exit": 0,
+      "tests": 14,
+      "stdout": "",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.056s\n\nOK\n"
+    },
+    {
+      "tool": "schemecheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.804s\n\nOK\n"
+    },
+    {
+      "tool": "servercheck",
+      "exit": 0,
+      "tests": 15,
+      "stdout": "",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.526s\n\nOK\n"
+    },
+    {
+      "tool": "statuscheck",
+      "exit": 0,
+      "tests": 22,
+      "stdout": "",
+      "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 0.120s\n\nOK\n"
+    },
+    {
+      "tool": "uniquecheck",
+      "exit": 0,
+      "tests": 10,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.617s\n\nOK\n"
+    }
+  ],
+  "demo": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "breaking",
+    "counts": {
+      "breaking": 1,
+      "review": 2,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [
+      {
+        "severity": "review",
+        "code": "document_metadata_changed",
+        "location": "/",
+        "message": "Document metadata, components or extensions changed; review anything not covered by specific findings."
+      },
+      {
+        "severity": "breaking",
+        "code": "property_names_incompatible",
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/propertyNames",
+        "message": "Potential break: projected response key domain widened."
+      },
+      {
+        "severity": "review",
+        "code": "property_name_schema_changed",
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/propertyNames",
+        "message": "Resolved object-key schema changed; review consumers of these names."
+      }
+    ],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "keycheck-v1 (includes mapcheck and earlier analyzers)",
+    "key_pairs": [
+      {
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/propertyNames",
+        "direction": "response",
+        "old": {
+          "names": [
+            "done",
+            "pending"
+          ],
+          "min_length": 0,
+          "max_length": null
+        },
+        "new": {
+          "names": [
+            "done",
+            "pending",
+            "retry"
+          ],
+          "min_length": 0,
+          "max_length": null
+        }
+      }
+    ],
+    "map_pairs": [],
+    "dispatch_pairs": [],
+    "schema_visits": 362,
+    "selector_groups": [],
+    "status_visits": 2500,
+    "remapped_header_pairs": 0,
+    "key_scope": "OpenAPI 3.1 propertyNames string domains: type, enum, const and inclusive code-point lengths. Other constraints remain review. Potential region-level breaks, not whole-object compatibility proof.",
+    "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "baseline_source": "https://api.imd.fun/openapi.json",
+    "demo": "Saved real IMD operation, hypothetically using OpenAPI 3.1 and a referenced response-key enum. Only the target expands. This is not an observed service change; no API operation is called."
+  },
+  "unchanged_capture": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "no_detected_breakage",
+    "counts": {
+      "breaking": 0,
+      "review": 0,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "keycheck-v1 (includes mapcheck and earlier analyzers)",
+    "key_pairs": [],
+    "map_pairs": [],
+    "dispatch_pairs": [],
+    "schema_visits": 371,
+    "selector_groups": [],
+    "status_visits": 2500,
+    "remapped_header_pairs": 0,
+    "key_scope": "OpenAPI 3.1 propertyNames string domains: type, enum, const and inclusive code-point lengths. Other constraints remain review. Potential region-level breaks, not whole-object compatibility proof."
+  },
+  "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "independent_key_oracle_cases": 648,
+  "suite_scratch_policy": "TemporaryDirectory redirected to test/scratch; source tests unchanged",
+  "live": {
+    "source": "https://api.imd.fun/openapi.json",
+    "user_agent": "Pepeolithic-KeyCheck/38.0",
+    "bytes": 23132,
+    "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "matches_capture": true,
+    "comparison": {
+      "schema": "apidelta-report-v1",
+      "perspective": "existing clients upgrading to the new description",
+      "status": "no_detected_breakage",
+      "counts": {
+        "breaking": 0,
+        "review": 0,
+        "info": 0
+      },
+      "operations_compared": 5,
+      "findings": [],
+      "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+      "extension": "keycheck-v1 (includes mapcheck and earlier analyzers)",
+      "key_pairs": [],
+      "map_pairs": [],
+      "dispatch_pairs": [],
+      "schema_visits": 371,
+      "selector_groups": [],
+      "status_visits": 2500,
+      "remapped_header_pairs": 0,
+      "key_scope": "OpenAPI 3.1 propertyNames string domains: type, enum, const and inclusive code-point lengths. Other constraints remain review. Potential region-level breaks, not whole-object compatibility proof."
+    }
+  }
+}

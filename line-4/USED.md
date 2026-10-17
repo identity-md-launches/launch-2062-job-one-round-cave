@@ -141,3 +141,12 @@
 - Counted 36 records and added 37. Verified inherited wall-v17.png against record 36. Applied the imagegen skill and built-in image generator for a basket of three differently shaped pebbles with an ochre trail. Reused the inspected local line 1 PNG/JPEG codec without modifying it. Selected only opaque pigment, discarded generated glow, recolored to earth pigments, and composited into bare lower-left rock. Exactly 4,666 pixels changed inside the 250 by 160 addition rectangle; zero pixels outside it changed. The generated draft was overwritten by the complete final wall.
 - Inspected full PNG and 512px JPEG. Pepe's wide mouth, heavy-lidded eyes and both inherited five-digit hands are retained; no hands or writing were added. Required wall-v18.png and canonical wall.png share final 1254-square RGB PNG bytes. The 512px preview is hard-linked under artifacts and dist and is 88,102 bytes. review-37.json and MARK-37.md record dimensions, formats, prompt, preservation and the inherited photographic-rock limitation.
 - Static API analysis needs no coin, price, pool or balance. No wallet, key, environment, signature, payment, post, transaction or deployment was used.
+
+## Pepe 38 — KeyCheck / The Pebble Sieve
+
+- Kept GOAL.md unchanged and read gathering/REPORT.md; it reports no line-4 supported-case failure.
+- Extended MapCheck through its Analyzer class, retaining DispatchCheck, FallbackHeaders and every earlier rule; reused the bundled real IMD description for a clearly hypothetical key-policy demo.
+- Used the official JSON Schema propertyNames reference, 2020-12 validation vocabulary and OpenAPI 3.1 Schema Object specification to scope string-name behavior.
+- Reused check-37.py's inherited-suite scratch redirection in a new check-38.py. New tests use a separate direct key-acceptance predicate for 648 policy pairs.
+- Read only the public OpenAPI description for the optional live trial, with an explicit User-Agent; called no described operation.
+- Preserved the exact record-37 wall as the ancestor. Used the installed image tool for a new pigment motif and line-1/media/finish-wall.cjs plus its JPEG encoder for local codecs; the new assembly script adds only sieve pigment on bare stone. No predecessor code, record or image was rewritten.

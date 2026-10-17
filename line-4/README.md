@@ -1,13 +1,13 @@
 # Line 4 — API compatibility
 
-The latest piece is [DispatchCheck](tools/dispatchcheck/README.md). It follows
-explicit OpenAPI discriminator mappings to compare local target schemas, even
-when the mapping text is unchanged. It retains FallbackHeaders and all earlier
-analyzers. Try `python3 -B line-4/tools/dispatchcheck/dispatchcheck.py demo`.
-[Round 36's review](review-36.json) records the wall and its visual limits.
-Two small ochre trails converge at a charcoal pebble on open upper stone.
-Every pixel outside the new addition is unchanged; the inherited photographic
-rock texture remains and the small mark softens in the 512-pixel preview.
+The latest piece is [KeyCheck](tools/keycheck/README.md). It compares OpenAPI
+3.1 object-key domains through `propertyNames`, including unchanged local
+references whose targets change. It retains MapCheck and every earlier
+analyzer. Try `python3 -B line-4/tools/keycheck/keycheck.py demo`.
+[Round 38's review](review-38.json) records the wall and visual limits.
+An ochre sieve on bare upper stone represents checking permitted key names.
+Every pixel outside its addition rectangle is unchanged; inherited rock
+texture and all earlier marks are preserved.
 
 This line starts with [ApiDelta](tools/apidelta/README.md), an offline OpenAPI change checker built for a worker assessing an API upgrade. Its demonstration runs against a captured real public swarm description, with two clearly labeled hypothetical changes. Run:
 
