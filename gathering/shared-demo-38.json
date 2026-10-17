@@ -1,0 +1,135 @@
+{
+  "baseline_source": "https://api.imd.fun/openapi.json",
+  "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "trial": "Hypothetical OpenAPI 3.1 response key enum expands behind an unchanged local reference.",
+  "network_used": false,
+  "extracted_files": 0,
+  "previous_mode": "review_required",
+  "unchanged": "no_detected_breakage",
+  "approved_gap_refused": "unclaimed bytes after local payload",
+  "changed": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "breaking",
+    "counts": {
+      "breaking": 1,
+      "review": 2,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [
+      {
+        "severity": "review",
+        "code": "document_metadata_changed",
+        "location": "/",
+        "message": "Document metadata, components or extensions changed; review anything not covered by specific findings."
+      },
+      {
+        "severity": "breaking",
+        "code": "property_names_incompatible",
+        "location": "/paths/~1requests~1quote/post/responses/200/content/application~1json/schema/propertyNames",
+        "message": "Potential break: projected response key domain widened."
+      },
+      {
+        "severity": "review",
+        "code": "property_name_schema_changed",
+        "location": "/paths/~1requests~1quote/post/responses/200/content/application~1json/schema/propertyNames",
+        "message": "Resolved object-key schema changed; review consumers of these names."
+      }
+    ],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "keycheck-v1 (includes mapcheck and earlier analyzers)",
+    "key_pairs": [
+      {
+        "location": "/paths/~1requests~1quote/post/responses/200/content/application~1json/schema/propertyNames",
+        "direction": "response",
+        "old": {
+          "names": [
+            "done",
+            "pending"
+          ],
+          "min_length": 0,
+          "max_length": null
+        },
+        "new": {
+          "names": [
+            "done",
+            "pending",
+            "retry"
+          ],
+          "min_length": 0,
+          "max_length": null
+        }
+      }
+    ],
+    "map_pairs": [],
+    "dispatch_pairs": [],
+    "schema_visits": 262,
+    "selector_groups": [],
+    "status_visits": 2500,
+    "remapped_header_pairs": 0,
+    "key_scope": "OpenAPI 3.1 propertyNames string domains: type, enum, const and inclusive code-point lengths. Other constraints remain review. Potential region-level breaks, not whole-object compatibility proof.",
+    "bundle_inputs": {
+      "old": {
+        "archive_sha256": "ec058f0b4aa3ea3a822f7ff7fce52d79788f1729326f7696359e6ae4dcccf919",
+        "approved_sha256_checked": true,
+        "preflight": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false
+        },
+        "member": "docs/openapi.json",
+        "member_sha256": "d3a78b5e48a81b976888d06d62ca2f1460054f006df0b84ca8ee79832bfe2cd4",
+        "checked_files": [
+          {
+            "path": "docs/openapi.json",
+            "bytes": 22437,
+            "sha256": "d3a78b5e48a81b976888d06d62ca2f1460054f006df0b84ca8ee79832bfe2cd4"
+          }
+        ],
+        "all_payloads_crc_checked": true,
+        "layout": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false,
+          "local_records": 1,
+          "local_header_bytes": 47,
+          "compressed_payload_bytes": 22437,
+          "descriptor_bytes": 0,
+          "end_record_bytes": 22
+        },
+        "strict_layout_checked": true
+      },
+      "new": {
+        "archive_sha256": "1d70348f830960e0432fe0bf8e663dd134fd133312e7ddc42ffc8aeffbe15b24",
+        "approved_sha256_checked": true,
+        "preflight": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false
+        },
+        "member": "docs/openapi.json",
+        "member_sha256": "e343508af628bdd803b261d70da5efa09a5df4ab8e12aa5432174cacce5b68e1",
+        "checked_files": [
+          {
+            "path": "docs/openapi.json",
+            "bytes": 22446,
+            "sha256": "e343508af628bdd803b261d70da5efa09a5df4ab8e12aa5432174cacce5b68e1"
+          }
+        ],
+        "all_payloads_crc_checked": true,
+        "layout": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false,
+          "local_records": 1,
+          "local_header_bytes": 47,
+          "compressed_payload_bytes": 22446,
+          "descriptor_bytes": 0,
+          "end_record_bytes": 22
+        },
+        "strict_layout_checked": true
+      }
+    }
+  }
+}

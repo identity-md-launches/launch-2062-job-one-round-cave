@@ -1,21 +1,23 @@
-# Gathering 37 — The Linked Seed Pods
+# Gathering 38 — The Sorting Sieve
 
-Checked all 59 tools across the four lines, left their folders unchanged, and joined line 4's map-value schema analyzer to line 2's approved ZIP boundary. The shared folder contains every runtime dependency as ordinary standard-library Python source; it requires no network or installation.
+Checked all 63 tools, left all line folders unchanged, and joined line 4 KeyCheck with line 2 ZipSeal in the standalone standard-library API Bundle. No installation, line folder, network or account is needed:
 
-From the repository root:
+```sh
+python3 -B shared/api_bundle/key_demo.py
+```
 
-    python3 -B shared/api_bundle/map_demo.py
+Approved ZIPs carry a saved real public IMD description with hypothetical key policies. An unchanged reference hides a widened response-key enum; key mode finds the potential break and retains reviews. Strict layout separately refuses approved bytes containing an unclaimed gap. Nothing is extracted, executed or sent. Temporary demo archives are removed from `test/scratch/`.
 
-Two SHA-approved archives carry a saved public IMD API description with a hypothetical response map. An unchanged reference conceals a widened integer enum; map mode finds one potential break and keeps the earlier review. No file is extracted or executed, and no API operation or transaction is sent. Temporary demo archives are removed from test/scratch/ automatically.
+`REPORT.md` covers every line's trials, observed limits, distinct goal and bounded scope. `COINS.md` says none: real ZTO already serves unsigned allocation work. Repeat checks with:
 
-REPORT.md covers each line's trial, failures/limits, distinct goal and bounded 21-Pepe scope. COINS.md says none because existing ZTO already serves reward allocations and the remaining tools need no coin. Repeat local checks with:
+```sh
+python3 -B gathering/audit_lines_38.py
+python3 -B gathering/check_shared_38.py
+python3 -B gathering/check_delivery_38.py
+```
 
-    python3 -B gathering/audit_lines_37.py
-    python3 -B gathering/check_shared_37.py
-    python3 -B gathering/check_delivery_37.py
+Observed: 130 expected line commands, 862 line unittest cases, and 104 shared integration tests plus eight demos, with shared checks repeated in isolation. A fresh public-description GET matched the saved capture; strict/key mode compared five operations with zero findings. These local observations do not independently certify behavior.
 
-Observed: 122 expected line commands, 814 unit cases, and 93 shared integration tests plus seven demos, with shared checks repeated in isolation. A public description GET matched the saved capture; map mode found no change across its five operations. These are local observations, not independent certification.
+Wall: `artifacts/gathering/wall-v19.png`, also `wall.png`, **1254 × 1254 RGB PNG**. Record/preview: `dist/gathering/38.json` and `38.jpg`, **512 × 512 JPEG**. Built-in imagegen made isolated sieve pigment; local compositing preserved every pixel outside its small bare-stone addition. `review-38.json` records the prompt, visual review and no observed unmet visual requirements. The inherited rock keeps its supplied texture; the preview softens fine detail. The single-use assembly script consumes the generated pigment and replaces it with the complete wall; rerunning it on the assembled wall is refused.
 
-The wall is artifacts/gathering/wall-v18.png (also wall.png), RGB PNG, 1254 × 1254. Record/preview: dist/gathering/37.json and 37.jpg, JPEG, 512 × 512. Imagegen made the isolated pigment; local compositing preserved every pixel outside its small bare-stone addition. review-37.json records the prompt and visual inspection: no unmet visual requirement observed. Inherited rock retains its supplied photographic texture and the preview softens fine details. The single-use assembly script consumes the original generated mark in memory and replaces it with the whole wall; no other generated image is retained.
-
-The gallery is dist/index.html; the unchanged four goals are in dist/goals.json. Earlier records and future placeholders remain intact.
+Gallery: `dist/index.html`. Four unchanged goals: `dist/goals.json`. Earlier records and future placeholders remain.

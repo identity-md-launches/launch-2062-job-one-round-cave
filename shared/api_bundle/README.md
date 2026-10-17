@@ -2,11 +2,65 @@
 
 Compare OpenAPI descriptions inside untrusted ZIPs without extracting or executing any member. Python 3.9+ and the standard library only. No installation, line folders, network or accounts are needed.
 
-Current complete comparison: add `--dispatch` to include every supported
-analyzer, including explicit discriminator mapping targets. Try
-`python3 -B shared/api_bundle/dispatch_demo.py` for a fully offline example.
+Current complete comparison: add `--keys` to include every supported
+analyzer, including OpenAPI 3.1 object-key policies. Add `--strict-layout` to
+require exact local ZIP record coverage before payload parsing. Try
+`python3 -B shared/api_bundle/key_demo.py` for a fully offline example.
 Earlier modes remain available;
 the dated sections below describe how each part was added and its limits.
+
+## Object-key policies and strict ZIP records (gathering 38)
+
+Line 4 KeyCheck now works inside line 2 ZipSeal's optional structural gate.
+Use `--keys` (Python: `keys=True`) for the most inclusive analyzer; this takes
+precedence over earlier analyzer flags. Use `--strict-layout` (Python:
+`strict_layout=True`) independently with any analyzer. Earlier flags and
+their default archive policy retain their previous behavior.
+
+```sh
+python3 -B shared/api_bundle/key_demo.py
+python3 -B shared/api_bundle/key_selftest.py
+python3 -B shared/api_bundle/api_bundle.py old.zip new.zip --keys --strict-layout
+```
+
+Add the existing `--old-sha256` and `--new-sha256` options with actual reviewed
+digests to require approved bytes. Approval precedes layout checks; layout,
+directory/path limits and every payload/CRC check precede API analysis. Strict
+mode checks local headers against the directory, descriptors, and contiguous
+record coverage from byte zero, rejecting hidden gaps and overlaps. It uses
+the same in-memory snapshot as payload inspection, without a pathname reread.
+The report includes byte-accounting `layout` fields and
+`strict_layout_checked: true` for each input. Nothing is extracted or executed.
+
+The demo uses a saved real public IMD operation with hypothetical OpenAPI 3.1
+key policies. An unchanged local reference hides an enum expansion from
+`pending, done` to `pending, done, retry`. Map mode leaves review; key mode
+finds a potential response-key break and retains reviews. A second trial
+shows that even a correctly SHA-approved archive can contain an unclaimed
+gap: the earlier gate accepts it, while strict layout refuses it before
+API analysis. These are illustrative changes, not live service observations.
+
+KeyCheck projects `propertyNames` onto string names: type, enum, const and
+inclusive Unicode code-point length bounds. Request narrowing and response
+widening are potential breaks. Pattern/format/composition/custom semantics
+stay explicit review; unsupported dialects stay review. At most 1,024 key
+pairs and 1,024 enum entries per visited policy are accepted. Remote targets,
+malformed policies and exhausted budgets refuse the comparison. A projected
+name may be unreachable under other object constraints; findings do not prove
+whole-object or runtime incompatibility. All earlier limits still apply.
+
+Strict layout is deliberately conservative classic stored/deflated ZIP
+accounting, not a content-safety guarantee or operating-system sandbox.
+Comments, extra fields and payloads remain byte containers. Hash approval
+establishes byte identity, not publisher trust. Cooperative filesystem access
+and cancellation/deadlines retain the limits described below. CLI exits stay
+0 (no detected break within the subset), 1 (potential break), 2 (refusal),
+3 (unresolved review). Review is not approval.
+
+The folder carries all 21 vendored modules as ordinary source files, with
+original and adapted hashes in `SOURCES.json`. The two new snapshots change
+only sibling imports and demo-capture paths. No line folder is needed at
+runtime; no installation, network, wallet or account is needed.
 
 ## Discriminator targets inside approved ZIPs (gathering 36)
 

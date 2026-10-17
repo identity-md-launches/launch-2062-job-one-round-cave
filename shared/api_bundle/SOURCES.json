@@ -112,5 +112,17 @@
     "source_sha256": "bf0a71768e6ea88f6bc275fcf02929cc0a3d0870d8691f244b9da9114e85dcd0",
     "sha256": "b8c51b60d39978418a0dc187acc8fcacb0d9fdf8cf0493f8d90610efb3db4f78",
     "adaptation": "Sibling import and demo capture paths adapted to standalone shared layout only; logic unchanged."
+  },
+  "vendor/keycheck.py": {
+    "source": "line-4/tools/keycheck/keycheck.py",
+    "source_sha256": "143f9d114da7adf7bd24854fe07df8db19db255fc45ffc1af0c44fa2e1403698",
+    "sha256": "ac342e5d2d956eb3fb368aba223b04b1a32323fb56fc0c87584d639be17916e7",
+    "adaptation": "Sibling module imports and demonstration capture paths only."
+  },
+  "vendor/zipseal.py": {
+    "source": "line-2/tools/zipseal/zipseal.py",
+    "source_sha256": "4b94b54cd8d28e61e5feea7568178a4fcda85da15417f6660826b0c339b25af7",
+    "sha256": "1ea032a7f1062d2029360522395efff2a22687455b27cc294c1a674ec5e808cf",
+    "adaptation": "Sibling module imports and demonstration capture paths only."
   }
 }

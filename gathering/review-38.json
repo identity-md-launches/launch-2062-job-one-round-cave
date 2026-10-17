@@ -1,0 +1,27 @@
+{
+  "record_number": 38,
+  "first_gathering": false,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB PNG",
+  "wall_bytes": 2812513,
+  "wall_sha256": "6b554a1d93ea98720f3edb5fee7c0fa7cabb97bc76b1519d8a2d34df75eaa406",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 90001,
+  "image_tool": "image_gen__imagegen via imagegen skill; isolated generated pigment composited with standard-library code and the existing local JPEG encoder",
+  "prompt": "Create a small isolated prehistoric cave-painting mark on transparent background: one shallow oval woven sieve drawn by hand in charcoal and worn yellow ochre, holding three small irregular chalk-white pebbles. The sieve’s underside has a few loose charcoal crosshatch strokes, with three subtle red ochre flecks below. Very simple, flat, irregular thumb and burnt-stick pigment marks, worn and broken, Lascaux or Chauvet. Earth pigments only: red/yellow ochre, charcoal black, dirty chalk white. No rock background: fully transparent around and between pigment marks. One compact centered motif only, no people, no frogs, no hands, no letters, numbers, captions, signatures, logos, watermarks, border or frame. This will be added as a small new mark on bare rock on an existing cave wall while preserving every old mark. Save the generated PNG directly as artifacts/gathering/wall-v19.png if file output is available.",
+  "visual_review": "Inspected the full finished wall. The new small ochre sieve and three chalk pebbles sit on bare left stone clear of the inherited staff and all prior marks. Pepe keeps his heavy-lidded eyes and wide mouth. Counted five digits on each inherited hand: four fingers and one thumb. No hand or stencil was added. No letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people, political or hateful symbols observed. Prior marks and rock remain unchanged outside the addition.",
+  "visual_requirements_unmet": [],
+  "preservation": "6333 pixels changed in [60,450,135,100]; zero outside. Previous wall hash matches record 37.",
+  "limitations": [
+    "The inherited cave rock keeps its supplied photographic texture.",
+    "Fine pigment detail softens in the 512-pixel JPEG.",
+    "Visual review is local, not independent certification."
+  ]
+}
