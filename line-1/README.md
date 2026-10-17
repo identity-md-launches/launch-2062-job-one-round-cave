@@ -1,6 +1,31 @@
 # Line 1 — Paths Before Footsteps
 
-## Latest piece: round 37 — The Roomy Basket
+## Latest piece: round 38 — The Timely Knot
+
+[Gatelock](tools/gatelock/README.md) finds a shortest bounded offline plan that
+meets shared renewable resource limits and intermediate handoff deadlines
+together. It includes intentional idle capacity and independently checks the
+complete result with Lockcheck, Plancheck and Gatecheck. A state-limit refusal
+makes no proof claim.
+
+```sh
+python3 -B line-1/tools/gatelock/gatelock.py --demo
+```
+
+Observed: draft uses one GPU during minutes 0–2; background uses it during 2–6
+while review runs on the other worker during 2–3. The handoff meets minute 3
+and all work finishes at minute 6. Nine new tests pass, including 180 exhaustive
+minute-grid oracle comparisons. Existing resource and gate checks also pass.
+The exact search is limited to ten tasks and four interchangeable workers;
+estimates and capacities remain caller assumptions, and no work is executed.
+
+A small red-ochre knotted cord joins the bare upper rock. The 1254 × 1254 PNG
+is `artifacts/line-1/wall-v19.png`, identical to continuing `wall.png`; record 38
+and its 512px JPEG are in `dist/line-1/`. [Review](review-38.json) records the
+prompt, formats, dimensions and visual limits. All 1,566,805 pixels outside the
+shaped addition mask remain identical; no new hands or writing were added.
+
+## Earlier piece: round 37 — The Roomy Basket
 
 [Lockplan](tools/lockplan/README.md) builds a complete schedule around shared
 renewable resource capacities, dependencies and worker slots. It skips blocked
@@ -171,6 +196,7 @@ no hands or writing were added. The goal and older records remain unchanged.
 | Find ready work and impossibility bounds | [Frontier](tools/frontier/README.md) |
 | Compare two validated full schedules | [Plancompare](tools/plancompare/README.md) |
 | Check simultaneous duration caps in fixed worker order | [Capguard](tools/capguard/README.md) |
+| Meet handoffs and shared resource limits together | [Gatelock](tools/gatelock/README.md) |
 | Build a plan with shared resource limits | [Lockplan](tools/lockplan/README.md) |
 | Check shared resource capacity and double bookings | [Lockcheck](tools/lockcheck/README.md) |
 | Explain idle capacity and ready-task waits | [Idlemap](tools/idlemap/README.md) |

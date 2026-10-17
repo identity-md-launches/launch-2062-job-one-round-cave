@@ -1,0 +1,53 @@
+{
+  "number": 38,
+  "name": "The Timely Knot",
+  "outputs": {
+    "required": "artifacts/line-1/wall-v19.png",
+    "continuing": "artifacts/line-1/wall.png",
+    "record": "dist/line-1/38.json",
+    "preview": "dist/line-1/38.jpg"
+  },
+  "media": {
+    "previous_sha256": "e4ea2655fe0a32a30d0124adac756e1d97bd033a0fd7408080c10949e8ba38ac",
+    "sha256": "a804add83932fd940467edd5f8003fc9db52a9859b7fafe4d67a6155fe9a7cce",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "png_bytes": 2883847,
+    "preview_format": "JPEG",
+    "preview_width": 512,
+    "preview_height": 512,
+    "preview_bytes": 83124,
+    "changed_pixels": 5654,
+    "protected_pixels": 1566805,
+    "outside_mask_changed_pixels": 0,
+    "mask": "feathered cord loop, knot and trailing segments on bare upper rock",
+    "png_roundtrip_passed": true
+  },
+  "generation": {
+    "tool": "built-in image_gen.imagegen",
+    "reference": "artifacts/line-1/wall-v18.png",
+    "prompt": "Use case: precise-object-edit. Edit the supplied 1254 by 1254 square cave painting. Preserve every existing ancestral mark and all rock, cracks, light and framing. Add ONLY one small prehistoric earth-pigment knotted cord on the bare rock near the upper center-left, centered at image pixel (456,260), entirely within x=400..495 and y=210..320. The cord is red ochre with one central loop/knot and two short trailing ends, uneven worn charcoal edging, stone visible through pigment. It symbolizes coordinating access before a deadline. Do not touch the basket at left, branching twig, weight at right, or Pepe below. Keep EXACTLY the same image dimensions and composition. No new hands, characters, letters, numbers, symbols of writing, captions, signatures, logos, watermarks, borders or frame. Existing heavy-lidded wide-mouthed Pepe and all existing hands remain unchanged. No other changes.",
+    "postprocess": "Retained only the generated cord with a feathered shaped mask. Used inherited local PNG codec and JPEG encoder; discarded the rest of the edit by restoring original pixels."
+  },
+  "review_step": "Viewed original, generated edit, final full PNG and final 512-pixel JPEG; compared decoded original and final pixels outside the addition mask.",
+  "visual_requirements": {
+    "square_size_preserved": true,
+    "ancestral_marks_preserved": true,
+    "rock_cracks_light_framing_preserved_outside_addition": true,
+    "pepe_wide_mouth_heavy_lidded_eyes_preserved": true,
+    "main_pepe_left_hand_digits": 5,
+    "main_pepe_right_hand_digits": 5,
+    "inherited_white_stencil_digits": 5,
+    "new_hands": 0,
+    "earth_pigments_only_for_addition": true,
+    "no_new_letters_numbers_captions_signatures_logos_watermarks_borders_frames": true
+  },
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Visual review is a local observation, not independent visual certification. Inherited small worn secondary figure details are harder to resolve than the main Pepe; all are unchanged.",
+    "Rock within the feathered cord mask is blended from the generated edit; every pixel outside it is identical to the predecessor.",
+    "The generated cord lies slightly above and right of the requested coordinates, entirely on previously bare rock; it does not cover any ancestral mark.",
+    "The brief explicitly requires a JPEG beside the JSON under dist while also generally banning pictures outside artifacts. Followed the specific dist/line-1/38.jpg requirement; it is the only new image outside artifacts and is below 100 KB."
+  ]
+}

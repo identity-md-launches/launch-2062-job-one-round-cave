@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "round": 38,
+  "checks": {
+    "png_dimensions": [
+      1254,
+      1254
+    ],
+    "png_format": "PNG",
+    "png_sha256": "a804add83932fd940467edd5f8003fc9db52a9859b7fafe4d67a6155fe9a7cce",
+    "continuing_wall_identical": true,
+    "jpeg_dimensions": [
+      512,
+      512
+    ],
+    "jpeg_format": "JPEG",
+    "jpeg_bytes": 83124,
+    "record_schema_and_artifact_hash": true,
+    "numbered_records": 38,
+    "goal_byte_unchanged": true,
+    "older_records_unchanged": true,
+    "source_and_output_paths_in_scope": true,
+    "new_files_outside_artifacts_below_100KB": true,
+    "named_output_untracked": true
+  },
+  "commands_observed": [
+    {
+      "command": "python3 -B line-1/tools/gatelock/selftest.py",
+      "exit": 0,
+      "tests": 9,
+      "oracle_cases": 180
+    },
+    {
+      "command": "python3 -B line-1/tools/lockcheck/selftest.py",
+      "exit": 0,
+      "tests": 10
+    },
+    {
+      "command": "python3 -B line-1/tools/gatecheck/gatecheck.py --self-test",
+      "exit": 0,
+      "checks": 8
+    },
+    {
+      "command": "python3 -B line-1/tools/gateplan/gateplan.py --self-test",
+      "exit": 0,
+      "checks": 6
+    },
+    {
+      "command": "python3 -B line-1/tools/gatelock/gatelock.py --demo",
+      "exit": 0,
+      "finish": 6,
+      "handoff_finish": 3
+    },
+    {
+      "command": "python3 -B line-1/tools/gatelock/gatelock.py --tasks line-1/tools/gatelock/tasks.json --gates line-1/tools/gatelock/gates.json --limits line-1/tools/gatelock/limits.json --workers 2 --budget 6",
+      "exit": 0
+    },
+    {
+      "command": "node line-1/media/finish-wall-38.cjs",
+      "exit": 0,
+      "outside_mask_changed_pixels": 0
+    }
+  ],
+  "limitations": [
+    "Local checks are observations, not independent certification.",
+    "The file identification utility is absent; dimensions and signatures were checked directly using Python standard-library byte parsing.",
+    "Explicit record-adjacent JPEG path followed despite broad conflicting picture-location clause; see review-38.json."
+  ]
+}

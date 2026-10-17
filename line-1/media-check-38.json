@@ -1,0 +1,17 @@
+{
+  "previous_sha256": "e4ea2655fe0a32a30d0124adac756e1d97bd033a0fd7408080c10949e8ba38ac",
+  "sha256": "a804add83932fd940467edd5f8003fc9db52a9859b7fafe4d67a6155fe9a7cce",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "png_bytes": 2883847,
+  "preview_format": "JPEG",
+  "preview_width": 512,
+  "preview_height": 512,
+  "preview_bytes": 83124,
+  "changed_pixels": 5654,
+  "protected_pixels": 1566805,
+  "outside_mask_changed_pixels": 0,
+  "mask": "feathered cord loop, knot and trailing segments on bare upper rock",
+  "png_roundtrip_passed": true
+}

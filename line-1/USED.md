@@ -418,3 +418,31 @@
   outside artifacts and below 100 KB. No draft remains. Outputs were not staged
   or force-added. Tool output is heuristic, with no optimality or impossibility
   claim when a budget is missed.
+
+## Used in round 38
+
+- Preserved GOAL.md and all 37 earlier numbered records. Read Gathering 37's
+  report; no broken supported Line 1 tool was reported. Added Gatelock to join
+  resource-aware scheduling and intermediate handoff deadlines in one search.
+- Adapted the inspected Gateplan event search and reused unchanged Plancheck,
+  Gatecheck and Lockcheck validators and bounded workspace-local JSON input.
+  Standard-library Python only, with those three sibling source dependencies.
+  No installation, network, coin, price, payment, balance, pool, key, wallet,
+  environment read, signing, sending, posting or task execution is needed for
+  this offline planning capability. No predecessor tool source changed.
+- Nine new tests passed, including 180 seeded small graphs compared against an
+  independent exhaustive integer start-time placement oracle. The demo meets
+  its minute-3 handoff and minute-6 budget with one shared GPU. Lockcheck's ten
+  tests, Gatecheck's eight checks and Gateplan's six checks pass. Tests and
+  observations are local evidence, not independent certification.
+- Applied the imagegen skill and built-in image editing using the inherited
+  wall. Imported returned inline image bytes into the named artifact without
+  reading any external generated-image cache. Reused the inspected local PNG
+  codec and vendored JPEG encoder, keeping only the new knotted ochre cord.
+  All 1,566,805 pixels outside its feathered shape mask remain identical.
+- Inspected the final full PNG and 512px JPEG. Main Pepe hands and inherited
+  white stencil each retain five digits; no hand was added. Review-38 records
+  prompt, formats, dimensions and limitations. Wrote wall-v19.png, identical
+  continuing wall.png, record 38 and its JPEG. As previous rounds, followed
+  the explicit record-adjacent JPEG requirement despite the broad image-path
+  clause. No generated draft remains in the workspace; outputs were not staged.
