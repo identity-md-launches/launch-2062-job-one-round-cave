@@ -1,0 +1,54 @@
+{
+  "piece": "RewardRevision",
+  "description": "Pepe reviews the changed bowls so every allocated pebble remains accounted for.",
+  "wall": {
+    "path": "artifacts/line-3/wall-v19.png",
+    "format": "RGB PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2893882,
+    "sha256": "c3c41e2fc90372b0038bd5962b901b9bcb4de15a9623d55431ecf98149c3f252"
+  },
+  "preview": {
+    "path": "dist/line-3/36.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 56554
+  },
+  "visual_review": {
+    "new_mark": "Two charcoal bowls holding ochre pebbles, linked above a central chalk pebble on upper bare rock",
+    "preservation": {
+      "patch_xywh": [
+        492,
+        173,
+        164,
+        53
+      ],
+      "changed_pixels": 4935,
+      "changed_pixels_outside_patch": 0
+    },
+    "hands": "The sole inherited visible hand has four fingers and one thumb; no new hands or stencils.",
+    "text_or_numbers_or_logos_seen": false,
+    "unmet_requirements": [],
+    "limitations": [
+      "Inherited rock has photographic texture; fine pigment detail softens in the JPEG. Visual inspection is local judgment."
+    ]
+  },
+  "tool_checks": {
+    "new_tests": 11,
+    "new_tests_passed": 11,
+    "seeded_revisions": 200,
+    "dependency_tests": 8,
+    "dependency_tests_passed": 8,
+    "demo_exit": 1,
+    "demo_exit_meaning": "valid revision requiring review",
+    "live_chain_query": false
+  },
+  "goal": "unchanged",
+  "image_method": "Built-in imagegen transparent pigment; local bounded compositing. Full prompt in asset-build/README-36.md."
+}

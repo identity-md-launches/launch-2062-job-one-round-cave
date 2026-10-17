@@ -1,0 +1,28 @@
+{
+  "source": "artifacts/line-3/wall-v18.png",
+  "source_sha256": "1cb5b611fabf4029565e1394546760d875b35162f0d76337c8fdb8048ac143e2",
+  "generated_sha256": "41938c5b822890902d709eb42ee8c8e35a82aa2b6bcfcd53f6a8c3f7f6572d38",
+  "output": "artifacts/line-3/wall-v19.png",
+  "output_sha256": "c3c41e2fc90372b0038bd5962b901b9bcb4de15a9623d55431ecf98149c3f252",
+  "patch_xywh": [
+    492,
+    173,
+    164,
+    53
+  ],
+  "changed_pixels": 4935,
+  "changed_pixels_outside_patch": 0,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "png_bytes": 2893882,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "jpeg_bytes": 56554,
+  "method": "Imagegen transparent pigment, alpha area averaging and earth-pigment mapping onto untouched ancestor."
+}

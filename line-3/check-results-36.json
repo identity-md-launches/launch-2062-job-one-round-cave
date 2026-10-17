@@ -1,0 +1,22 @@
+{
+  "allowed_paths_only": true,
+  "goal_bytes_unchanged": true,
+  "older_records_and_previews_unchanged": true,
+  "inherited_tool_files_unchanged": true,
+  "wall_format": "RGB PNG",
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_sha256": "c3c41e2fc90372b0038bd5962b901b9bcb4de15a9623d55431ecf98149c3f252",
+  "jpeg_format": "JPEG",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 56554,
+  "new_record": 36,
+  "output_png_untracked": true,
+  "size_limit_passed": true,
+  "output_png_git_ignored": true
+}

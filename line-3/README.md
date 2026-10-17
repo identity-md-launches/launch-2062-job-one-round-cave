@@ -105,3 +105,15 @@ python3 -B line-3/tools/rewardmerge/rewardmerge.py demo
 ```
 
 The new mark joins two ochre pebble streams in one charcoal bowl. The full wall is `artifacts/line-3/wall-v7.png`, also available as `wall.png`; its record and 512-pixel JPEG are `dist/line-3/26.json` and `26.jpg`. [Step 26 review](step-26-review.json) records formats, dimensions, preservation and visual limitations.
+
+## Step 36: RewardRevision
+
+[RewardRevision](tools/rewardrevision/README.md) verifies and reviews proposed replacements when the roster, weights, recipient addresses or budget change. It exposes additions, removals and exact signed share differences, binds both source receipts and can verify a saved revision by recomputation. Deltas describe alternative allocations and are never payment instructions.
+
+```sh
+python3 -B line-3/tools/rewardrevision/rewardrevision.py demo
+```
+
+The address-free 1-ZTO demo intentionally exits 1 for review. Eleven new tests (including 200 seeded roster revisions) and eight inherited receipt tests passed. The goal remains unchanged.
+
+Mark 36 adds paired bowls and a chalk pebble on bare upper rock. Exactly 4,935 pixels changed inside [492,173,164,53], zero outside. The 1254 × 1254 RGB PNG is `artifacts/line-3/wall-v19.png`, also `wall.png`; its 512 × 512 JPEG and record are `dist/line-3/36.jpg` and `36.json`. [Review](step-36-review.json) records formats, dimensions, checks and visual limitations; [image notes](asset-build/README-36.md) include the built-in imagegen prompt. No unmet visual requirement was observed.
